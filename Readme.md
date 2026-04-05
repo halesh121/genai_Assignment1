@@ -2,7 +2,10 @@
 
 ## Overview
 
-This project runs a LangChain chat model example using the `qwen/qwen3.6-plus:free` model from OpenRouter.
+This project contains two LangChain examples using the `qwen/qwen3.6-plus:free` model from OpenRouter:
+
+- `llm_assgin1.py`: Basic chat model interaction
+- `llm_assgn2.py`: Prompt template example explaining a topic in different roles
 
 ## Prerequisites
 
@@ -41,10 +44,23 @@ OPENROUTER_API_KEY=your_open_router_api_key_here
 ## Run
 
 ```powershell
+# Run the basic chat model example
 python llm_assgin1.py
+
+# Run the prompt template example
+python llm_assgn2.py
 ```
 
-## Notes
+## Scripts
 
-- If you see `venvlauncher.exe` copy errors, you're likely in a Unicode path (e.g., `文档`). Move to ASCII path as above.
-- `llm_assgin1.py` now uses `temperature` and checks `OPENROUTER_API_KEY`.
+### llm_assgin1.py
+Basic LangChain chat model example that demonstrates interaction with the OpenRouter API.
+
+### llm_assgn2.py
+Uses a PromptTemplate to explain the topic "gravity" in two different roles:
+- As a teacher explaining to 5-year-olds
+- As a software architect explaining to developers
+
+Outputs explanations from both perspectives.
+
+
