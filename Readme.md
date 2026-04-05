@@ -2,10 +2,11 @@
 
 ## Overview
 
-This project contains two LangChain examples using the `qwen/qwen3.6-plus:free` model from OpenRouter:
+This project contains three LangChain examples using the `qwen/qwen3.6-plus:free` model from OpenRouter:
 
 - `llm_assgin1.py`: Basic chat model interaction
 - `llm_assgn2.py`: Prompt template example explaining a topic in different roles
+- `llm_assign3.py`: Structured output parsing for social media content generation
 
 ## Prerequisites
 
@@ -49,6 +50,9 @@ python llm_assgin1.py
 
 # Run the prompt template example
 python llm_assgn2.py
+
+# Run the structured output parsing example
+python llm_assign3.py
 ```
 
 ## Scripts
@@ -62,5 +66,8 @@ Uses a PromptTemplate to explain the topic "gravity" in two different roles:
 - As a software architect explaining to developers
 
 Outputs explanations from both perspectives.
+
+### llm_assign3.py
+Demonstrates structured output parsing using PydanticOutputParser. Generates social media content for LinkedIn, Twitter, and Instagram about "AI in healthCare" with properly formatted JSON output.
 
 
